@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VV Consulting Group | HRBP for IPO, Startup and SME</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+        body {
+            font-family: "Cabin", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        .image-marquee {
+            overflow: hidden;
+            width: 100%;
+            /* or the width you prefer */
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .image-container {
+            display: inline-block;
+            animation: scroll-images 30s linear infinite;
+        }
+
+        .image-container img {
+            display: inline-block;
+            width: auto;
+            /* or your desired width */
+            height: 100px;
+            /* or your desired height */
+            margin-right: 50px;
+            /* Adjust the space between images */
+        }
+
+        @keyframes scroll-images {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky top-0 z-50">
+        <div class="navbar bg-base-100 lg:px-60 md:px-20 px-3 sticky top-0">
+            <div class="navbar-start hidden md:flex">
+                <a href="index.html"><img
+                        src="https://static.wixstatic.com/media/413409_11d19f51a339416084fdb11f72305186~mv2.jpg/v1/fill/w_125,h_75,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/413409_11d19f51a339416084fdb11f72305186~mv2.jpg"
+                        alt="vvconsulting" class="lg:w-full w-1/2"></a>
+            </div>
+            <div class="drawer drawer-end md:hidden navbar-end w-full">
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <label for="my-drawer" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                </div>
+                <div class="drawer-side"> <!-- Changed z-50 to z-20 -->
+                    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                    <ul id="sidebarMenu" class="menu p-4 w-60 min-h-full bg-base-200 text-base-content text-xl z-50">
+                        <!-- Sidebar content here -->
+                        <li><a class="flex justify-center pb-10 pt-10" href="index.html"><img
+                                    src="https://static.wixstatic.com/media/413409_11d19f51a339416084fdb11f72305186~mv2.jpg/v1/fill/w_125,h_75,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/413409_11d19f51a339416084fdb11f72305186~mv2.jpg"
+                                    alt="vvconsulting" class="lg:w-full w-1/2"></a></li>
+                        <li><a href="index.html" class="dark:text-white text-black">About Us</a></li>
+                        <li><a href="services.html" class="text-[#bc13fe]">Services</a></li>
+                        <li><a href="ourteam.html" class="dark:text-white text-black">Our Team</a></li>
+                        <li><a href="contact-us.html" class="dark:text-white text-black">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center hidden md:flex">
+                <ul class="menu menu-horizontal px-1 text-xl text-white">
+                    <li><a href="index.html" class="dark:text-white text-black">About Us</a></li>
+                    <li><a href="services.html" class="text-[#bc13fe]">Services</a></li>
+                    <li><a href="ourteam.html" class="dark:text-white text-black">Our Team</a></li>
+                    <li><a href="contact-us.html" class="dark:text-white text-black">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <section id="hero">
+        <div class="hero h-[10vh] md:h-[25vh] bg-base-200">
+            <h1 class="text-center text-[#bc13fe] text-xl md:text-3xl lg:text-5xl">Our Services
+            </h1>
+        </div>
+    </section>
+
+    <section class="flex justify-center">
+        <div class="container my-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 grid-flow-row lg:gap-x-10 gap-y-20">
+            <div>
+                <h1 class="text-[#bc13fe] text-xl text-center font-extrabold">SME</h1>
+                <div class="card md:w-80 bg-base-100 shadow-xl h-full">
+                    <div class="card-body h-full flex-col justify-between">
+                        <div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">IR/ER Advisory</span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">A Support Team – HR Manager, HR & Payroll Exec and Legal</span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">End-To-End HR processing
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Face-to-Face, Google Meet, Zoom or on Call Advisory
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">All documentations are up to date
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Many More
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>To refer to the Scope of Work on the detailed tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#bc13fe] text-xl text-center font-extrabold">MICRO -STARTUP</h1>
+                <div class="card md:w-80 bg-base-100 shadow-xl h-full">
+                    <div class="card-body h-full flex-col justify-between">
+                        <div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Setting up the department from scratch with workforce management
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">IR/ER Advisory
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">A Support Team – HR Manager, HR & Payroll Exec and Legal
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">End-To-End HR processing
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Face-to-Face, Google Meet, Zoom or on Call Advisory
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">All documentations are up to date
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Many More
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>To refer to the Scope of Work on the detailed tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#bc13fe] text-xl text-center font-extrabold">IPO</h1>
+                <div class="card md:w-80 bg-base-100 shadow-xl h-full">
+                    <div class="card-body h-full flex-col justify-between">
+                        <div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">To be IPO ready
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Pre ISO Audit
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">HR Audit
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Full focus on GRC
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Support on Workforce Management
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Face-to-Face, Google Meet, Zoom or on Call Advisory
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">A Support Team – Senior Consultants, Senior Legal Counsels and GRC Manager
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Many More
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>To refer to the Scope of Work on the detailed tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#bc13fe] text-xl text-center font-extrabold">IR/ER ADVISORY</h1>
+                <div class="card md:w-80 bg-base-100 shadow-xl h-full">
+                    <div class="card-body h-full flex-col justify-between">
+                        <div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">IR/ER Advisory
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Basic Advisory on Social Compliance/Audit
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Basic Advisory on Contracts and Agreements
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Basic HR Documentation Review (excl. Handbook and Policies)
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Face-to-Face, Google Meet, Zoom or on Call Advisory
+                                </span>
+                            </div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Many More
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <p><strong class="text-[#bc13fe]">FREE</strong> 2024 Employee Handbook</p>
+                            <p><strong class="text-[#bc13fe]">FREE</strong> HR Documentations / Templates /Guidebooks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#bc13fe] text-xl text-center font-extrabold">PAYROLL OUTSOURCING</h1>
+                <div class="card md:w-80 bg-base-100 shadow-xl h-full">
+                    <div class="card-body h-full flex-col justify-between">
+                        <div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Processing monthly payroll for all types of employees – contract, permanent, temporary, freelance, internship etc. 
+                                    Including registration of accounts for KWSP, PERKESO & LHDN.
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>To refer to the Scope of Work on the detailed tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#bc13fe] text-xl text-center font-extrabold">HR TRAINING</h1>
+                <div class="card md:w-80 bg-base-100 shadow-xl h-full">
+                    <div class="card-body h-full flex-col justify-between">
+                        <div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Our HR Training services offer personalized programs led by experienced instructors. From foundational concepts to advanced strategies, participants gain practical skills to drive organizational success. Whether mastering compliance, honing leadership, or embracing new trends, our training equips professionals to excel. With a focus on personalized learning, we empower HR practitioners to make meaningful contributions.
+
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>To refer to the Scope of Work on the detailed tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#bc13fe] text-xl text-center font-extrabold">HR MENTORSHIP</h1>
+                <div class="card md:w-80 bg-base-100 shadow-xl h-full">
+                    <div class="card-body h-full flex-col justify-between">
+                        <div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">Empowering HR executives and leaders to excel in their roles and mentor them on career development through personalized one-on-one conversations.
+
+
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>To refer to the Scope of Work on the detailed tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#bc13fe] text-xl text-center font-extrabold">HR PROJECT</h1>
+                <div class="card md:w-80 bg-base-100 shadow-xl h-full">
+                    <div class="card-body h-full flex-col justify-between">
+                        <div>
+                            <div class="flex items-start my-2">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bc13fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                <span class="ml-5 ">To support your internal HR member or teams in designing and implementing HR initiatives and processes around employee engagement survey, employee personality assessment, performance management, compensation and benefits, employee handbook – policies and processes.
+
+
+
+                                    
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>To refer to the Scope of Work on the detailed tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="flex justify-center flex-col items-center">
+        <div class="container px-10 flex flex-col w-full my-10 justify-center items-center">
+            <div class="divider md:text-3xl text-xl">Why Choose Us</div>
+        </div>
+        <div class="container px-10 my-10 grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 grid-flow-row-dense lg:gap-x-10 gap-y-10">
+            <div class="flex justify-center">
+                <div class="card lg:w-80 md:w-64 rounded-none border border-black shadow-xl">
+                    <div class="w-full h-fit border-b-2 bg-[#800080] border-black flex items-center justify-center">
+                        <h1 class="text-center my-3 text-white">HR BUSINESS PARTNER</h1>
+                    </div>
+        
+                    <div class="card-body">
+                        <li class="lg:text-sm text-xs">As your HRBP, we strategically align all HR matters with our Clients
+                            business needs</li>
+                        <li class="lg:text-sm text-xs">We are specialized HRBP team with industry-specific knowledge. We tailor
+                            our HR solutions that directly addresses the unique demands of our Client's sector</li>
+                        <li class="lg:text-sm text-xs">We work closely with Stakeholders on workforce planning and Talent
+                            Management</li>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="card md:w-64  rounded-none border border-black shadow-xl">
+                    <div class="w-full h-fit border-b-2 bg-[#bc13fe] border-black flex items-center justify-center">
+                        <h1 class="text-center my-3 text-white">AGILITY AND ADAPTABILITY</h1>
+                    </div>
+        
+                    <div class="card-body">
+                        <li class="lg:text-sm text-xs">With the experiences exposure our Consultants have, this provides the
+                            ability to quickly adapt to industry changes</li>
+                        <li class="lg:text-sm text-xs">We are able to implement changes and solutions more rapidly than larger
+                            firms by providing our Clients the latest advancements in HR & Business practices</li>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="card md:w-64  rounded-none border border-black shadow-xl">
+                    <div class="w-full h-fit border-b-2 bg-[#800080] border-black flex items-center justify-center">
+                        <h1 class="text-center my-3 text-white">DIRECT CLIENT ENGAGEMENT</h1>
+                    </div>
+        
+                    <div class="card-body">
+                        <li class="lg:text-sm text-xs">As VVCG's commitment is building strong client relationship, we showcase
+                            our commitment by providing direct access to key Consultants rather than having our Clients interact
+                            with various representatives.</li>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="card md:w-64  rounded-none border border-black shadow-xl">
+                    <div class="w-full h-fit border-b-2 bg-[#bc13fe] border-black flex items-center justify-center">
+                        <h1 class="text-center my-3 text-white">INNOVATION & TECHNOLOGY INTERGRATION</h1>
+                    </div>
+        
+                    <div class="card-body">
+                        <li class="lg:text-sm text-xs">VVCG has great credibility in the insdustry and has been interviewed by
+                            Business Media on technology integrations. In 2023, when AI was introduced, VVCG was the first to be
+                            interviewed by Media</li>
+                        <li class="lg:text-sm text-xs">We adapt and adopt cutting-edge tools to enhance our services including
+                            our Clients.</li>
+                        <li class="lg:text-sm text-xs">VVCG have also Attended a Masterclass on AI when it first introduced.
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="card md:w-64  rounded-none border border-black shadow-xl">
+                    <div class="w-full h-fit border-b-2 bg-[#800080] border-black flex items-center justify-center">
+                        <h1 class="text-center my-3 text-white">NICHE SPECIALIZATION</h1>
+                    </div>
+        
+                    <div class="card-body">
+                        <li class="lg:text-sm text-xs">We have experience working with client in the tech sector and companies
+                            aiming to go public (IPO). We conduct ISO audits, ensuring our clients are IPO-ready by focusing on
+                            key areas such as business, technology, product, HR, forecasting, GRC.</li>
+                        <li class="lg:text-sm text-xs">Our consultants have a great understanding of ISO financial acumen,
+                            including EBITDA and the 'Rule of 40'.</li>
+                    </div>
+                </div>
+            </div>
+        
+        
+        </div>
+    </section>
+    <section class="flex justify-center">
+        <div class="container px-10 my-10 -z-10">
+            <div class="flex flex-col w-full my-10">
+                <div class="divider md:text-3xl text-xl">Our Client</div>
+            </div>
+            <div class="image-marquee">
+                <div class="image-container">
+                    <!-- Repeat your images inside the container -->
+                    <img src="https://www.talentdesk.io/hubfs/1-May-03-2022-01-13-39-41-PM.png" alt="Image 1">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Logo-schindler.png" alt="Image 2">
+                    <img src="https://thequantuminsider.com/wp-content/uploads/Nippon_Telegraph_and_Telephone_logo.svg.png"
+                        alt="Image 3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Logo_de_WebHelp.svg/1200px-Logo_de_WebHelp.svg.png"
+                        alt="Image 3">
+                    <img src="https://valuationmasterclass.com/wp-content/uploads/2022/06/JP-Morgan-Chase-Emblem.png"
+                        alt="Image 3">
+                    <img src="https://mma.prnewswire.com/media/684591/Third_Bridge_Logo.jpg?p=facebook" alt="Image 3">
+                    <img src="https://idwdesigncollection.com/wp-content/uploads/2021/01/idw-logo.png" alt="Image 3">
+                    <img src="https://qanvast.com/next-images/logo-qanvast-horizontal.svg" alt="Image 3">
+                    <!-- Add as many images as you like -->
+                    <img src="https://www.talentdesk.io/hubfs/1-May-03-2022-01-13-39-41-PM.png" alt="Image 1">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Logo-schindler.png" alt="Image 2">
+                    <img src="https://thequantuminsider.com/wp-content/uploads/Nippon_Telegraph_and_Telephone_logo.svg.png"
+                        alt="Image 3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Logo_de_WebHelp.svg/1200px-Logo_de_WebHelp.svg.png"
+                        alt="Image 3">
+                    <img src="https://valuationmasterclass.com/wp-content/uploads/2022/06/JP-Morgan-Chase-Emblem.png"
+                        alt="Image 3">
+                    <img src="https://mma.prnewswire.com/media/684591/Third_Bridge_Logo.jpg?p=facebook" alt="Image 3">
+                    <img src="https://idwdesigncollection.com/wp-content/uploads/2021/01/idw-logo.png" alt="Image 3">
+                    <img src="https://qanvast.com/next-images/logo-qanvast-horizontal.svg" alt="Image 3">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+        <aside class="items-center grid-flow-col">
+            <img src="https://static.wixstatic.com/media/413409_11d19f51a339416084fdb11f72305186~mv2.jpg/v1/fill/w_42,h_25,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/413409_11d19f51a339416084fdb11f72305186~mv2.jpg" alt="vvconsulting">
+            <p>© 2024  VV Consulting Group by The VV Groups Sdn Bhd [Reg: 202303262332 (LA0062279-M)]</p>
+        </aside>
+        <nav class="md:place-self-center md:justify-self-end">
+            <div class="grid grid-flow-col gap-4">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                        </path>
+                    </svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                        </path>
+                    </svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                        </path>
+                    </svg></a>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+
+</html>
