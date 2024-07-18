@@ -5,6 +5,7 @@
     "tailwindcss": "^3.4.4"
   },
   "scripts": {
-  "deploy": "gh-pages -d src"
-}
+    "deploy": "gh-pages -d src"
+  },
+  "homepage": "https://bytedynamics02.github.io/"
 }
