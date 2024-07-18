@@ -1,0 +1,593 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <style>
+    li {
+      font-weight: 600;
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+  <!-- Header -->
+  <div class="flex justify-center">
+    <div class="navbar bg-transparent absolute xl:w-1/2 w-full">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost z-50 lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52">
+            <li><a href="#home">Home</a></li>
+            <li>
+              <a>About This Plan</a>
+              <ul class="p-2">
+                <li><a href="#plan-perks">Plan Perks</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+              </ul>
+            </li>
+            <li><a>Our Work</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl text-white">Mevion Design</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="#home">Home</a></li>
+          <li>
+            <details>
+              <summary>About This Plan</summary>
+              <ul class="p-2">
+                <li><a href="#plan-perks">Plan Perks</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a>Our Work</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end md:flex hidden">
+        <a class="btn text-white">Subscribe Now</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Hero -->
+  <div class="hero min-h-screen"
+    style="background-image: url(https://meviondesign.com/wp-content/uploads/2024/01/WELCOME-BG-1-1-1-scaled.webp);">
+    <div class="hero-overlay bg-opacity-0"></div>
+    <div class="hero-content text-center text-neutral-content lg:flex-row flex-col-reverse">
+      <div class="md:max-w-1/2">
+        <h1 class="mb-5 xl:text-7xl md:text-4xl text-2xl font-semibold text-white lg:text-left text-center">Unlimited
+          Design Plan For Your Creative Needs.</h1>
+        <p class="mb-5 xl:text-2xl md:text-xl font-semibold text-white lg:text-left text-center">Flat Monthly Fee. No
+          Contract. No Hidden Cost.</p>
+        <div class="md:flex md:flex-row flex-col lg:justify-start justify-center">
+          <button class="btn text-white px-12">Plan Perks</button>
+          <button class="btn text-white px-12 md:mx-6 md:my-0 my-6">How it works</button>
+          <button class="btn btn-ghost text-white px-12">See Pricing<span class="material-symbols-outlined">east</span></button>
+        </div>
+  
+      </div>
+      <div class="md:max-w-1/2">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/THUMBNAILS_rev-01-2-1024x934.webp" alt=""
+          class="w-full">
+      </div>
+    </div>
+  </div>
+  <!-- Trusted By -->
+  <div class="flex justify-center items-center bg-[#F7F7F7]">
+    <!-- Slider main container -->
+    <div class="flex flex-col justify-evenly min-h-[20vh]">
+      <h1 class="text-center text-3xl text-[#4C5056]">TRUSTED BY:</h1>
+      <div class="swiper max-w-[75vw]">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="https://meviondesign.com/wp-content/uploads/2023/04/LOGO_TRUSTED-01.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img src="https://meviondesign.com/wp-content/uploads/2023/04/LOGO_TRUSTED-02.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img src="https://meviondesign.com/wp-content/uploads/2023/04/LOGO_TRUSTED-03.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img src="https://meviondesign.com/wp-content/uploads/2023/04/LOGO_TRUSTED-04.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img src="https://meviondesign.com/wp-content/uploads/2023/04/LOGO_TRUSTED-05.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img src="https://meviondesign.com/wp-content/uploads/2023/04/LOGO_TRUSTED-06.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img src="https://meviondesign.com/wp-content/uploads/2023/04/LOGO_TRUSTED-08.webp"
+              alt=""></div>
+        </div>
+  
+      </div>
+    </div>
+  
+  </div>
+  
+  <!-- Plan Perks -->
+  <div id="plan-perks" class="flex flex-col justify-center items-center xl:px-96 md:px-8 px-4 lg:py-32 md:py-16 py-8 bg-white">
+    <div>
+      <h1 class="text-5xl font-semibold text-center text-black">Plan Perks</h1>
+      <div class=""></div>
+      <p class="text-center my-8 text-gray-500">Reliable. Flexible. Unlimited</p>
+    </div>
+    <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-12 md:gap-24 gap-0">
+      <div class="flex flex-col justify-center md:my-0 my-8">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/PERKS_Unlimited-Design-Perks01-1024x1024.webp"
+          class="lg:w-full md:w-3/4 w-1/2 self-center" alt="">
+        <h1 class="text-2xl text-black font-bold md:my-10 my-5 xl:text-start text-center">Unlimited Design</h1>
+        <span class="text-black xl:text-start text-center">Request any kind of design from logo, social media post,
+          printed media, anything you could think of without limit to fulfill your creative needs.</span>
+      </div>
+      <div class="flex flex-col justify-center md:my-0 my-8">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/PERKS_Unlimited-Revision-Perks02-1024x1024.webp"
+          class="lg:w-full md:w-3/4 w-1/2 self-center" alt="">
+        <h1 class="text-2xl text-black font-bold md:my-10 my-5 xl:text-start text-center">Unlimited Revision</h1>
+        <span class="text-black xl:text-start text-center">Not satisfied with the design? We provide you an unlimited
+          revision for every delivered artboard design because your satisfaction is our priority!</span>
+      </div>
+      <div class="flex flex-col justify-center md:my-0 my-8">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/PERKS_Unlimited-Brand-Perks03-1024x1024.webp"
+          class="lg:w-full md:w-3/4 w-1/2 self-center" alt="">
+        <h1 class="text-2xl text-black font-bold md:my-10 my-5 xl:text-start text-center">Unlimited Brand</h1>
+        <span class="text-black xl:text-start text-center">Have to handle more than one brand? Worry not! You are eligible
+          to request designs for more than one brand in one plan!</span>
+      </div>
+      <div class="flex flex-col justify-center md:my-0 my-8">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/PERKS_No-Contract-Perks04-1024x1024.webp"
+          class="lg:w-full md:w-3/4 w-1/2 self-center" alt="">
+        <h1 class="text-2xl text-black font-bold md:my-10 my-5 xl:text-start text-center">No Contract</h1>
+        <span class="text-black xl:text-start text-center">Subscribe as long as you want! A contract does not bind this
+          plan so that you can enjoy our services with no long-term commitment required.</span>
+      </div>
+      <div class="flex flex-col justify-center md:my-0 my-8">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/PERKS_Fast-Turnaround-Perks05-1024x1024.webp"
+          class="lg:w-full md:w-3/4 w-1/2 self-center" alt="">
+        <h1 class="text-2xl text-black font-bold md:my-10 my-5 xl:text-start text-center">Fast Turnaround</h1>
+        <span class="text-black xl:text-start text-center">Request unlimitedly, and we guarantee you to receive a minimum
+          of three (3) artboard designs per business day for the whole month of the subscription period. </span>
+      </div>
+      <div class="flex flex-col justify-center md:my-0 my-8">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/PERKS_Dedicated-Team-Perks06-1024x1024.webp"
+          class="lg:w-full md:w-3/4 w-1/2 self-center" alt="">
+        <h1 class="text-2xl text-black font-bold md:my-10 my-5 xl:text-start text-center">Dedicated Team</h1>
+        <span class="text-black xl:text-start text-center">You will not only get one designer in charge. Instead, you will
+          get a full dedicated team, including a project manager, a designer, and communication to work on your project.
+        </span>
+      </div>
+      <div class="flex flex-col justify-center md:my-0 my-8">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/PERKS_No-Hidden-Cost-Perks07-1024x1024.webp"
+          class="lg:w-full md:w-3/4 w-1/2 self-center" alt="">
+        <h1 class="text-2xl text-black font-bold md:my-10 my-5 xl:text-start text-center">No Hidden Cost</h1>
+        <span class="text-black xl:text-start text-center">No additional cost! You won’t be charge extra for anything at
+          all! Only a flat fee of RM2100/month, and you will get everything you need for a design without limitation.
+        </span>
+      </div>
+      <div class="flex flex-col justify-center md:my-0 my-8">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/PERKS_WhatsApp-Support-Perks08-1024x1024.webp"
+          class="lg:w-full md:w-3/4 w-1/2 self-center" alt="">
+        <h1 class="text-2xl text-black font-bold md:my-10 my-5 xl:text-start text-center">WhatsApp Support</h1>
+        <span class="text-black xl:text-start text-center">Getting headaches with the complicated ways of communication?
+          We provide you a WhatsApp support for a day to day communication. Easy, Universal, Responsive. </span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Our Amazing Work -->
+  <div>
+    <div class="flex md:flex-row flex-col justify-between items-center xl:px-96 px-12 py-8">
+      <h1 class="text-black xl:text-6xl md:text-3xl text-xl font-bold ">Our Amazing Work</h1>
+      <button
+        class="btn btn-md px-12 bg-red-600 hover:bg-red-500 rounded-md border-0 text-white shadow-md my-5 md:my-0">Show Me
+        More</button>
+    </div>
+    <!-- Slider main container -->
+    <div class="md:py-8 mx-8">
+      <div class="amazing-work overflow-hidden">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img class="rounded-xl"
+              src="https://meviondesign.com/wp-content/uploads/elementor/thumbs/VitCer-q3saiaimexwnt582ejmoaqwxv8c949ivglw2pegc68.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img class="rounded-xl"
+              src="https://meviondesign.com/wp-content/uploads/elementor/thumbs/Website-Printed-Media-01-min-scaled-q3sajd2075df15o35iadmz6u812avurv9wmzdqv734.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img class="rounded-xl"
+              src="https://meviondesign.com/wp-content/uploads/elementor/thumbs/hui_post3-q3saf2wh2bie53w05nnka238su63thrw0pncod7rfk.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img class="rounded-xl"
+              src="https://meviondesign.com/wp-content/uploads/elementor/thumbs/MOBILES-PORTFOLIO-16-q3sagdwek1aq9lzqj7ywqq8ai3qgicygv69mo7a2sg.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img class="rounded-xl"
+              src="https://meviondesign.com/wp-content/uploads/elementor/thumbs/Website-Printed-Media-05-min-q3sarrq1bsvqvlgg2548xut9i3mhqe5fripbwueffk.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img class="rounded-xl"
+              src="https://meviondesign.com/wp-content/uploads/elementor/thumbs/GIVEAWAY-q3saey7a45byj22tx3mffl9xtwt9r098c2dx9zeqao.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img class="rounded-xl"
+              src="https://meviondesign.com/wp-content/uploads/elementor/thumbs/MOBILES-PORTFOLIO-02-q3safnkx8oap8j1yswlcswvdvbc6iu1zfk018gd3mo.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img class="rounded-xl"
+              src="https://meviondesign.com/wp-content/uploads/elementor/thumbs/MOBILES-PORTFOLIO-10-q3sag2mca0vaeag4d33dwt2rdha1xzpotmfswvqsv4.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img class="rounded-xl"
+              src="https://meviondesign.com/wp-content/uploads/elementor/thumbs/Website-Logo-05-q3sailsooyc3ogrokoi74o2gzusnomrni5pwgpzm3k.webp"
+              alt=""></div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Package -->
+  <div id="pricing"
+    class="flex lg:flex-row flex-col justify-between items-center xl:px-96 py-8 min-h-[90vh] bg-[url('https://meviondesign.com/wp-content/uploads/2024/01/BLOB1-1-1.webp')] bg-center bg-no-repeat">
+    <div class="lg:w-1/2 w-full lg:my-0 md:my-20 my-10 lg:text-start text-center px-12">
+      <h4 class="text-red-500 xl:text-3xl text-xl font-bold">Request As Much As You Want With</h4>
+      <h1 class="text-black xl:text-6xl md:text-4xl text-2xl font-bold my-8">Monthly Flat Fees.</h1>
+      <p class="text-black my-8">The most convenient design offer out there! Request as many designs as you want for the
+        whole month with unlimited brand and revision with a flat rate of RM2100. </p>
+      <a href="#" class="text-black font-semibold flex items-center">Learn How<span class="material-symbols-outlined ml-3">east</span></a>
+    </div>
+    <div class="lg:w-1/2 w-full min-h-full md:px-12 px-4">
+      <div class="card bg-[#313030] w-full h-full shadow-2xl shadow-red-500 text-white">
+        <div class="card-body">
+          <div class="flex flex-col justify-between">
+            <h4 class="text-md font-bold md:mt-5 mt-2">Static Design</h4>
+            <h2 class="card-title text-4xl md:my-5 my-2">Basic Package</h2>
+            <p>Get instant access to our Graphic team to service your company with full design capabilities.</p>
+          </div>
+  
+          <hr class="my-10">
+          <div class="card-actions flex flex-col items-center justify-between">
+            <h1 class="md:text-6xl text-3xl font-semibold"><span class="md:text-4xl text-xl">MYR</span>2100<span
+                class="md:text-lg text-sm">/mo</span></h1>
+            <button class="btn btn-block mt-10 mb-5 bg-red-500 hover:bg-red-600 border-none text-white">I'm
+              Interested</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Ad-Hoc -->
+  <div
+    class="min-h-[65vh] bg-[url('https://meviondesign.com/wp-content/uploads/2024/01/WWE_BG2-01-01-1.webp')] flex lg:flex-row flex-col justify-between items-center xl:px-96 py-8 px-12">
+    <div class="w-full lg:w-1/2">
+      <h4 class="text-red-500 xl:text-3xl text-xl font-bold">Don't Need Unlimited?</h4>
+      <h1 class="text-white xl:text-6xl md:text-4xl text-2xl font-bold my-8">Ad-Hoc</h1>
+      <p class="text-white my-8">What if you don’t need that many designs? Worry not. We have another alternative for you.
+        On an ad-hoc basis, you can request any design requirements per quantity. </p>
+    </div>
+    <div class="w-full lg:w-1/2">
+      <img src="https://meviondesign.com/wp-content/uploads/2024/01/WWE_TN2-01-1-1-1024x762.webp" alt="">
+    </div>
+  </div>
+  
+  <!-- Plan Perks -->
+  <div id="how-it-works"
+    class="min-h-[100vh] flex flex-col justify-center items-center xl:px-96 md:px-8 px-4 lg:py-32 md:py-16 py-8 bg-white">
+    <div>
+      <h1 class="text-5xl font-semibold text-center text-black">How It Works</h1>
+      <div class=""></div>
+      <p class="text-center my-8 text-gray-500">Let us do the things more.</p>
+    </div>
+    <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 xl:gap-12 md:gap-24 gap-0">
+      <div class="flex flex-col justify-center md:my-0 my-8">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/01-Mevy-1-2048x2048.webp"
+          class="lg:w-full md:w-3/4 w-1/2 self-center" alt="">
+        <h1 class="text-2xl text-black font-bold md:my-10 my-5 text-center">Request Your Design</h1>
+        <span class="text-black text-center">Request your designs unlimitedly via our Trello management page dedicated to
+          your project. Don’t forget to provide a clear explanation for each request and reference if you have any.
+        </span>
+      </div>
+      <div class="flex flex-col justify-center md:my-0 my-8">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/04-ION-1-2048x2048.webp"
+          class="lg:w-full md:w-3/4 w-1/2 self-center" alt="">
+        <h1 class="text-2xl text-black font-bold md:my-10 my-5 text-center">Design In Process </h1>
+        <span class="text-black text-center">Our project manager and designer will immediately receive and go through your
+          request before the design process starts. Once everything is clear, our designer will design based on your
+          priority.</span>
+      </div>
+      <div class="flex flex-col justify-center md:my-0 my-8">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/Untitled-1-03-03-1-2048x2048.webp"
+          class="lg:w-full md:w-3/4 w-1/2 self-center" alt="">
+        <h1 class="text-2xl text-black font-bold md:my-10 my-5 text-center">Revise & Feedback</h1>
+        <span class="text-black text-center">Once done, you will receive the designs, and we will give you time to revise
+          them while working on the next design on the list. Give us your feedback, and we will immediately make the
+          necessary amendments.</span>
+      </div>
+      <div class="flex flex-col justify-center md:my-0 my-8">
+        <img src="https://meviondesign.com/wp-content/uploads/2024/01/04-Mevy-1-2048x2048.webp"
+          class="lg:w-full md:w-3/4 w-1/2 self-center" alt="">
+        <h1 class="text-2xl text-black font-bold md:my-10 my-5 text-center">Get Your Design</h1>
+        <span class="text-black text-center">Once you are satisfied with your design, we will send you the necessary file
+          format via E-mail, including the working file for every design. All set! and this process will be repeated for
+          the whole subscription period.</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Just Another Section -->
+  <div
+    class="min-h-[150vh] bg-[url('https://meviondesign.com/wp-content/uploads/2024/01/BLOB2-2-1.webp')] bg-no-repeat bg-center flex flex-col justify-between items-center xl:px-96 py-8 px-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-y-32 w-full">
+      <div class="lg:w-full w-full lg:my-0 md:my-20 my-5 lg:text-start text-center order-2 md:order-1">
+        <h1 class="text-black xl:text-4xl md:text-2xl text-xl font-bold my-8">Want To Maximize Your Social Media?</h1>
+        <p class="text-black my-8">Social Media Management is one of the services provided by Mevion Design. This is a
+          monthly subscription plan that focuses on building your social media account visually. It’s like hiring a full
+          team to construct your social media. We provide every basic thing you need for your social media, from graphic
+          design, content strategy, copywriting, and even post-scheduling.</p>
+        <div class="flex lg:flex-row flex-col justify-between my-5">
+          <span class="font-bold text-black flex items-center"><span class="material-symbols-outlined border rounded-full p-2 bg-red-200 text-red-500 mr-2">edit_square</span>Content Strategy Development</span>
+          <span class="font-bold text-black flex items-center"><span class="material-symbols-outlined border rounded-full p-2 bg-red-200 text-red-500 mr-2">groups</span>Dedicated Social Team</span>
+        </div>
+        <button
+          class="btn btn-md bg-transparent border-red-500 hover:border-red-500 hover:bg-red-500 text-red-500 hover:text-white px-12">Learn
+          More<span class="material-symbols-outlined">east</span></button>
+      </div>
+      <div class="lg:w-full w-full min-h-full md:px-12 px-4 relative flex justify-center items-center order-1 md:order-2">
+        <img class="rounded-xl shadow-2xl shadow-red-500"
+          src="https://meviondesign.com/wp-content/uploads/elementor/thumbs/SMM-q3sah9uzxnmdgu5peuszzs21hw87kzs0inutdcc080.webp"
+          alt="">
+        <div class="card bg-red-500 w-96 shadow-xl hidden lg:flex absolute bottom-4 left-4">
+          <div class="card-body flex flex-row">
+            <div><span class="material-symbols-outlined border rounded-full p-2 bg-red-200 text-red-500 mr-2">share</span></div>
+            <div>
+              <h4 class="text-white font-bold mb-3">Anything You Need</h4>
+              <p class="text-white">Having to hire someone to do the graphics but also creating content for your social
+                media? This is the perfect service for you!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-full w-full min-h-full md:px-12 px-4 relative flex justify-center items-center">
+        <img class="rounded-xl shadow-2xl shadow-red-500"
+          src="https://meviondesign.com/wp-content/uploads/elementor/thumbs/ADHOC-q3saej5y01v9ls52f6567yyn4fqo4rw753ctzaecdc.webp"
+          alt="">
+        <div class="card bg-red-500 md:w-96 shadow-xl hidden lg:flex absolute bottom-4 right-4">
+          <div class="card-body flex flex-row">
+            <div><span class="material-symbols-outlined border rounded-full p-2 bg-red-200 text-red-500 mr-2">savings</span></div>
+            <div>
+              <h4 class="text-white font-bold mb-3">Affordable Price</h4>
+              <p class="text-white">A perfect way to request your design individually. No plan, fast, reliable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-full w-full lg:my-0 md:my-20 my-5 lg:text-start text-center">
+        <h1 class="text-black xl:text-4xl md:text-2xl text-xl font-bold my-8">Or If You Need Less Design, Go For Ad-Hoc
+          Basis</h1>
+        <p class="text-black my-8">What if you don’t need that many designs? Worry not. We have another alternative for
+          you. On an ad-hoc basis, you can request any design requirements per quantity. This is suitable for people that
+          only need an individual design request. We cover any design requirements from logo, illustration, brochure,
+          banner, business, anything you could think of. Check out our sales kit for the pricing and more information
+          about our service.</p>
+        <div class="flex lg:flex-row flex-col justify-between my-5">
+          <span class="font-bold text-black flex items-center"><span class="material-symbols-outlined border rounded-full p-2 bg-red-200 text-red-500 mr-2">local_shipping</span>First Draft Within 3 Days</span>
+          <span class="font-bold text-black flex items-center"><span class="material-symbols-outlined border rounded-full p-2 bg-red-200 text-red-500 mr-2">date_range</span>14 Days Unlimited Revision Period</span>
+        </div>
+        <button
+          class="btn btn-md bg-transparent border-red-500 hover:border-red-500 hover:bg-red-500 text-red-500 hover:text-white px-12">See
+          Pricing<span class="material-symbols-outlined">east</span></button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- FAQ -->
+  <div class="min-h-[100vh] flex flex-col justify-center items-center xl:px-96 py-8 md:px-12 px-3">
+    <h1 class="text-black font-bold lg:text-5xl text-3xl md:mb-20 mb-5 text-center">Frequently Asked Questions</h1>
+    <div class="rounded-lg shadow-lg min-w-full text-black lg:p-12 p-2">
+      <div class="collapse collapse-arrow bg-transparent">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title md:text-xl text-lg font-bold">What Does Unlimited Design Mean?</div>
+        <div class="collapse-content md:pr-24 pr-5">
+          <p>Unlimited graphic design means you don’t have to pay hourly or per project. Create as many design projects as
+            you need, and we’ll complete them in your set order. Once a project is completed, we’ll start the next in your
+            queue same-day. We guarantee to deliver a minimum of 3 designs per day, excluding revisions. On average, we
+            deliver between 3 to 7 designs daily.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-transparent">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title md:text-xl text-lg font-bold">What Does Unlimited Brand Mean?</div>
+        <div class="collapse-content md:pr-24 pr-5">
+          <p>In this unlimited plan, you can request designs for any brand and are not limited to only one brand. You need
+            to provide us with the briefing and materials required for each brand you want us to work for, and our team
+            will work according to each brand’s identity.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-transparent">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title md:text-xl text-lg font-bold">How Long Do I Have To Wait For My Design?</div>
+        <div class="collapse-content md:pr-24 pr-5">
+          <p>After receiving your requests, the designer-in-charge of your project will start working from the first queue
+            on the list (you may list the request based on priority). We guarantee to deliver the first draft within 12-24
+            working hours. However, more customized designs (ex. Company logo) will take extra time to delivered.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-transparent">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title md:text-xl text-lg font-bold">What Does Unlimited Revision Mean?</div>
+        <div class="collapse-content md:pr-24 pr-5">
+          <p>After receiving the requested designs, you will have an unlimited revision period to amend according to your
+            liking. We will make the necessary changes for you until you are satisfied.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-transparent">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title md:text-xl text-lg font-bold">How The Revision Work?</div>
+        <div class="collapse-content md:pr-24 pr-5">
+          <p>The unlimited revision period will start after receiving the first draft for every design request, and the
+            process will take not more than 24 hours. We will still work on the next design while waiting for your
+            feedback and delivering the following designs as scheduled. Take note that the revision delivery will not
+            affect the average daily delivery.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-transparent">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title md:text-xl text-lg font-bold">What Type Of Design Can I Request?</div>
+        <div class="collapse-content md:pr-24 pr-5">
+          <p>We provide a wide range of design requirements. Here are some samples of the most common design requests we
+            usually receive:</p>
+          <ul class="list-disc ml-10">
+            <li class="text-black">Logos</li>
+            <li class="text-black">Arts & Illustrations</li>
+            <li class="text-black">Social Media Poster</li>
+            <li class="text-black">Business (Namecard, Letterhead, Presentation, etc.)</li>
+            <li class="text-black">Printed Media (Brochure, Banner, Packaging, etc.)</li>
+            <li class="text-black">Fashion (Clothing, Mask, Scarf, etc.)</li>
+            <li class="text-black">Web & Mobile (Digital Banner, E-commerce banner, etc.)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-transparent">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title md:text-xl text-lg font-bold">Is There Any Contract Or Hidden Cost?</div>
+        <div class="collapse-content md:pr-24 pr-5">
+          <p>No long-term commitment is required. Yes, you read it correctly. This plan is not bounded by a contract which
+            make it more flexible for you. Regardless of how many requests you submit or how many amendments you need,
+            your flat monthly charge will never increase. RM1500/month for everything!</p>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  <!-- Footer -->
+  <footer class="footer lg:place-items-center bg-[#313030] text-base-content p-10 lg:grid flex flex-col lg:justify-evenly justify-start w-full">
+    <nav>
+      <h6 class="footer-title text-white text-3xl">Mevion Design</h6>
+      <p class="font-bold text-lg">Working Hours:</p>
+      <p class="font-bold text-lg">Mon - Fri (10 AM - 6 PM)</p>
+    </nav>
+    <nav>
+      <h6 class="footer-title text-white text-2xl">Quick Links</h6>
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">Our Work</a>
+      <a class="link link-hover">Contact</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Let's Connect!</h6>
+      <p>Connect with our social media to get the latest news fom us!</p>
+      <div class="grid grid-flow-col gap-4">
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+          </svg>
+        </a>
+        <a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </footer>
+  <footer class="footer bg-[#313030] text-base-content border-red-500 border-t xl:px-72 px-12 py-4 lg:grid flex flex-col lg:justify-between justify-center items-center w-full">
+    <aside class="grid-flow-col items-center text-center">
+      <p class="font-bold">
+        Copyright © 2024 Mevion Design
+      </p>
+    </aside>
+    <nav class="md:place-self-center md:justify-self-end">
+      <div class="grid grid-flow-col gap-4">
+        <p class="font-bold">Powered by Mevion Design</p>
+      </div>
+    </nav>
+  </footer>
+  <span></span>
+  <a href=""><svg viewBox="0 0 32 32" class="w-[50px] h-[50px] fill-white p-2 bg-[#4dc247] rounded-full shadow-md hover:shadow-lg fixed bottom-5 right-5 z-10"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg></a>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 30,
+    loop: true,
+    slidesPerView: 2,
+    breakpoints:{
+      768:{
+        slidesPerView: 5,
+      },
+      1024:{
+        slidesPerView: 6,
+      }
+    },
+    autoplay:{
+      delay: 5000,
+    },
+    freeMode:{
+      enabled: true,
+      minimumVelocity: 0,
+      momentum: true,
+      momentumBounce: true,
+      momentumBounceRatio: 2,
+      momentumRatio: 1,
+      momentumVelocityRatio: 2,
+      sticky: false,
+    },
+    
+    
+  });
+
+  const swiper2 = new Swiper('.amazing-work', {
+    speed: 400,
+    spaceBetween: 10,
+    loop: true,
+    slidesPerView: 2,
+    breakpoints:{
+      768:{
+        slidesPerView: 4,
+      },
+      1024:{
+        slidesPerView: 5,
+      }
+    },
+    autoplay:{
+      delay: 5000,
+    },
+    freeMode:{
+      enabled: true,
+      minimumVelocity: 0,
+      momentum: true,
+      momentumBounce: true,
+      momentumBounceRatio: 2,
+      momentumRatio: 1,
+      momentumVelocityRatio: 2,
+      sticky: false,
+    },
+    scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    
+    
+  });
+</script>
+
+</html>
