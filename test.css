@@ -1,0 +1,488 @@
+/* General Styles and Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #222;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  img, .category-card, .goodie-item {
+    transition: transform 0.3s ease;
+  }
+  img:hover, .category-card:hover, .goodie-item:hover {
+    transform: scale(1.03);
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  section {
+    max-width: 1280px;
+    padding: 60px 20px;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  h1 { font-size: 2.2em; margin-bottom: 0.2em; }
+  h2 { font-size: 1.8em; margin-bottom: 0.5em; text-align: center; }
+  h3 { font-size: 1.3em; margin-bottom: 0.3em; }
+  p { margin: 0.5em 0; }
+  
+  /* Navbar Section */
+  .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #00adb5; /* teal */
+    text-align: center;
+    padding: 12px 0;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar.h5{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* Hero Section Styles */
+  .hero {
+    position: relative;
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #00adb5;
+  }
+  .hero::before {
+    /* overlay for readability */
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    
+  }
+  .hero-content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  .hero h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 3em;
+    margin-bottom: 0.3em;
+  }
+  .hero .event-tagline {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+  }
+  .hero .event-details {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  .hero .event-details .sep {
+    /* separator dot or bar between date and venue */
+    display: inline-block;
+  }
+  .countdown-timer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+  }
+  .countdown-timer div {
+    text-align: center;
+    margin: 0 10px;
+  }
+  .countdown-timer span {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .countdown-timer small {
+    display: block;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #eee;
+    margin-top: 2px;
+  }
+  .btn {
+    border-radius: 30px;
+    padding: 12px 35px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  .register-btn {
+    background-color: #fff;
+    color: #00adb5;
+    border: 2px solid #00adb5;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  .register-btn:hover {
+    background-color: #008b92;
+    color: #fff;
+  }
+  
+  /* Sections - Headings and common styles */
+  .section {
+    margin: 0 auto;
+    padding: 80px 20px;
+  }
+  .section p.section-tagline {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1em;
+    color: #555;
+  }
+  
+  /* Categories Section */
+  .categories {
+    background: #FFFFFF;
+  }
+  .categories .category-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .category-card {
+    flex: 1 1 calc(33% - 20px);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  .category-card h3 {
+    color: #00adb5;
+    margin-bottom: 0.5em;
+  }
+  .category-card p {
+    font-size: 0.95em;
+    line-height: 1.4;
+  }
+  
+  /* Basic resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Section container styling */
+  #what-you-get {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #what-you-get h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Goodies Grid */
+  .goodies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .goodie-item {
+    text-align: center;
+  }
+  .goodie-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .goodie-item figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.95em;
+    color: #333;
+  }
+  .goodie-item figcaption small {
+    font-size: 0.85em;
+    color: #555;
+  }
+  
+  /* CTA Button */
+  .size-chart-cta {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #viewSizeChartBtn {
+    background: #007BFF;       /* Blue background for visibility */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #viewSizeChartBtn:hover {
+    background: #0056b3;       /* Darker blue on hover */
+  }
+  
+  /* Modal overlay */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scrolling if content is long */
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent dark background */
+  }
+  /* Modal content box */
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 1rem 1.5rem;
+    max-width: 600px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  /* Close button (X) */
+  .modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  .modal-content .close:hover {
+    color: #000;
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  .tab-link {
+    flex: 1;
+    padding: 0.5rem 0;
+    background: #f7f7f7;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .tab-link:not(:last-child) {
+    border-right: 1px solid #ddd;
+  }
+  .tab-link.active {
+    background: #eaeaea;
+    font-weight: bold;
+  }
+  .tab-link:focus {
+    outline: none;
+  }
+  
+  /* Tab content images */
+  .tab-content img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+  }
+  .tab-content img.active {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Race Kit Info Box */
+  .race-kit-info {
+    background: #F9FAFB;  /* light gray background */
+    border-left: 4px solid #007BFF;  /* colored border to highlight */
+    padding: 1rem 1.25rem;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+  }
+  .race-kit-info p {
+    margin: 0.5em 0;
+  }
+  .race-kit-info strong {
+    color: #000;
+  }
+  
+  /* Responsive adjustments (if needed) */
+  @media (max-width: 600px) {
+    .modal-content {
+      width: 90%;
+      margin: 10% auto;
+      padding: 1rem;
+    }
+    .tabs {
+      flex-direction: column;
+    }
+    .tab-link {
+      border: 1px solid #ddd;
+      margin-bottom: -1px;
+    }
+    .tab-link.active {
+      background: #eaeaea;
+    }
+  }
+  
+  /* Location Section */
+  .location {
+    background: #fff;
+  }
+  .location .venue-name {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  .location-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .map-container {
+    flex: 1 1 400px;
+    min-width: 300px;
+  }
+  .directions {
+    flex: 1 1 400px;
+    font-size: 0.95em;
+  }
+  .directions p {
+    margin: 0.5em 0;
+  }
+  .directions ul {
+    list-style: disc inside;
+    margin-left: 0;
+  }
+  .directions li {
+    margin-bottom: 0.5em;
+  }
+  .directions em {
+    font-style: normal;
+    font-weight: bold;
+  }
+  
+  /* Reasons to Join Section */
+  .reasons {
+    background: #f8f8f8;
+  }
+  .reasons-list {
+    list-style: none;
+    padding: 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .reasons-list li {
+    background: url('https://img.icons8.com/fluency-systems-regular/8x/checked.png') no-repeat 0 5px;
+    /* small check icon as bullet */
+    background-size: 16px 16px;
+    padding-left: 25px;
+    margin-bottom: 1em;
+  }
+  
+  /* FAQ Section */
+  .faq {
+    background: #fff;
+  }
+  .faq-item {
+    margin-bottom: 15px;
+  }
+  .faq-item summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 0;
+    outline: none;
+    /* Optional: add an icon indicator for collapsible */
+    position: relative;
+  }
+  .faq-item summary::after {
+    content: "＋";  /* plus sign */
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+  }
+  .faq-item details[open] summary::after {
+    content: "−";  /* minus sign when open */
+  }
+  .faq-item p {
+    margin: 10px 0 0 0;
+    padding-left: 5px;
+  }
+  .faq a {
+    color: #00adb5;
+    text-decoration: underline;
+  }
+  .more-questions {
+    margin-top: 10px;
+    font-size: 0.95em;
+    text-align: center;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9em;
+  }
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Hero font adjustments */
+    .hero h1 { font-size: 1.8em; }
+    .hero .event-tagline { font-size: 1em; }
+    .hero .event-details { font-size: 0.9em; }
+  
+    /* Categories: stack cards vertically */
+    .category-cards {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .category-card {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  
+    /* Location section: stack map and directions */
+    .location-details {
+      flex-direction: column;
+    }
+    .map-container, .directions {
+      flex: 1 1 100%;
+    }
+  }
+  
