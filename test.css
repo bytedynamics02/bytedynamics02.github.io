@@ -39,7 +39,7 @@
   }
   h1 { font-size: 2.2em; margin-bottom: 0.2em; }
   h2 { font-size: 1.8em; margin-bottom: 0.5em; text-align: center; }
-  h3 { font-size: 1.3em; margin-bottom: 0.3em; }
+  h3 { font-size: 1.5em; margin-bottom: 0.3em; }
   p { margin: 0.5em 0; }
   
   /* Navbar Section */
@@ -63,14 +63,71 @@
     letter-spacing: 0.5px;
   }
 
+  /* Navigation Bar */
+.top-navbar {
+    background-color: #000;
+    padding: 15px 20px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .nav-logo img {
+    height: 3rem;
+  }
+  
+  .buy-btn {
+    background-color: #ff4d88;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .buy-btn:hover {
+    background-color: #e63e77;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+
   /* Hero Section Styles */
   .hero {
     position: relative;
-    background: url('banner.jpg') no-repeat center center/cover;
+    overflow: hidden;
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
-    background-color: #00adb5;
+    padding: 120px 20px;
+    height: auto;
+    background-color: black;
+  }
+  .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.5;
   }
   .hero::before {
     /* overlay for readability */
@@ -80,12 +137,14 @@
     background: rgba(0, 0, 0, 0.3);
     
   }
+
   .hero-content {
     position: relative;
-    max-width: 800px;
-    margin: 0 auto;
     z-index: 1;
+    max-width: 1280px;
+    margin: 0 auto;
   }
+  
   .hero h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -93,18 +152,45 @@
     margin-bottom: 0.3em;
   }
   .hero .event-tagline {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-    font-weight: 500;
+    margin-bottom: 1em;
   }
   .hero .event-details {
-    font-size: 1em;
-    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+  }
+  .hero .event-location {
+    text-transform: uppercase;
+    margin-bottom: 0.2em;
+    font-weight: 550;
   }
   .hero .event-details .sep {
     /* separator dot or bar between date and venue */
     display: inline-block;
   }
+  @keyframes glowBlink {
+    0%, 100% {
+      text-shadow: none;
+    }
+    50% {
+      text-shadow:
+        0 0 5px #00adb5,
+        0 0 10px #00adb5,
+        0 0 20px #00adb5,
+        0 0 25px #00adb5,
+        0 0 30px #00adb5;
+    }
+  }
+  
+  .blink-text {
+    color: #fff;
+    animation: glowBlink 1.5s infinite;
+  }
+  
+  /* Random delay variations */
+  .delay-1 { animation-delay: 0s; }
+  .delay-2 { animation-delay: 0.3s; }
+
   .countdown-timer {
     display: flex;
     justify-content: center;
@@ -177,6 +263,10 @@
     color: #00adb5;
     margin-bottom: 0.5em;
   }
+  .category-card h2 {
+    color: #00adb5;
+    margin-bottom: 0.5em;
+  }
   .category-card p {
     font-size: 0.95em;
     line-height: 1.4;
@@ -192,19 +282,227 @@
   /* Section container styling */
   #what-you-get {
     padding: 2rem 1rem;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
   }
   #what-you-get h2 {
     text-align: center;
     margin-bottom: 1.5rem;
   }
+
+  /* Mission & Vision Section */
+.mission-vision {
+    padding: 80px 20px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
   
+.mv-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;        /* ✅ Ensures horizontal centering */
+    max-width: 1280px;
+    gap: 40px;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+  
+  .mv-image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;        /* ✅ Centers the image */
+    align-items: center;
+  }
+  
+  .mv-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  
+  .mv-text {
+    flex: 1 1 50%;
+  }
+  
+  .mv-text h2 {
+    color: #00adb5;
+    font-size: 1.8rem;
+    margin-bottom: 0.3em;
+  }
+  
+  .mv-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .mv-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .mv-text h2 {
+      margin-top: 1.5rem;
+    }
+  }
+
+  /* Special Guest Section */
+.special-guest {
+    background: #f9f9f9;
+    padding: 80px 20px;
+    margin: 0 auto;
+  }
+  
+  .guest-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+  
+  .guest-photo {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .guest-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  
+  .guest-info {
+    flex: 1 1 50%;
+  }
+  
+  .guest-info h2 {
+    color: #00adb5;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .guest-info h2 span {
+    color: #000;
+    font-weight: 400;
+  }
+  
+  .guest-info p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .guest-info h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.3rem;
+  }
+  
+  .guest-info .title {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .guest-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .guest-info h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* Event Highlights */
+.event-highlights {
+    padding: 80px 20px;
+    background: #fff;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .highlight-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .event-highlights h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .highlight-subtext {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+  }
+  
+  .highlight-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  
+  .highlight-item {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color:#f7f7f7 ;
+    border-radius: 2rem;
+  }
+  
+  .highlight-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .highlight-item h4 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #00adb5;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .highlight-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
   /* Goodies Grid */
   .goodies-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1rem;
     margin-bottom: 2rem;
   }
   .goodie-item {
@@ -350,6 +648,9 @@
     .tab-link.active {
       background: #eaeaea;
     }
+    .goodies-grid{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
   }
   
   /* Location Section */
@@ -389,6 +690,78 @@
     font-style: normal;
     font-weight: bold;
   }
+
+  /* Race Kit Collection Section */
+.race-kit-section {
+    padding: 80px 20px;
+    background: #f9f9f9;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .race-kit-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .race-kit-section .section-tagline {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .race-kit-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .race-kit-card {
+    flex: 1 1 300px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    text-align: left;
+  }
+  
+  .race-kit-card h3 {
+    font-size: 1.2rem;
+    color: #00adb5;
+    margin-bottom: 1rem;
+  }
+  
+  .race-kit-card p {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .race-kit-card strong {
+    color: #000;
+  }
+  
+  .race-kit-card em {
+    color: #555;
+    font-style: italic;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .race-kit-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .race-kit-card {
+      text-align: center;
+    }
+  }
+  
   
   /* Reasons to Join Section */
   .reasons {
@@ -485,4 +858,44 @@
       flex: 1 1 100%;
     }
   }
+
+  /* Supporter/Sponsor Section */
+.sponsors {
+    padding: 80px 20px;
+    background: #fff;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .sponsor-container {
+    margin: 0 auto;
+  }
+  
+  .sponsors h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .sponsor-group {
+    margin-bottom: 40px;
+  }
+  
+  .sponsor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .sponsor-logos img {
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .sponsor-logos img:hover {
+    transform: scale(1.05);
+  }
+  
+  
   
